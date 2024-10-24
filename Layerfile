@@ -25,5 +25,5 @@ RUN docker run -it -d --name dpanel --restart=always \
  dpanel/dpanel:latest 
 EXPOSE TCP 80
 EXPOSE WEBSITE 8807
-#EXPOSE WEBSITE 443
-#EXPOSE WEBSITE 5244 /alist
+EXPOSE TCP 443
+EXPOSE TCP 5244

@@ -23,7 +23,7 @@ RUN docker run -it -d --name dpanel --restart=always \
  -v /var/run/docker.sock:/var/run/docker.sock -v dpanel:/dpanel \
  -e INSTALL_USERNAME=admin -e INSTALL_PASSWORD=admin \
  dpanel/dpanel:latest 
-EXPOSE WEBSITE 80 /domain
+EXPOSE TCP 80
 EXPOSE WEBSITE 8807
 #EXPOSE WEBSITE 443
 #EXPOSE WEBSITE 5244 /alist

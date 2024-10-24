@@ -25,4 +25,4 @@ RUN docker run -it -d --name dpanel --restart=always \
  dpanel/dpanel:latest 
 #EXPOSE WEBSITE 443
 EXPOSE WEBSITE 8807
-#EXPOSE WEBSITE http://localhost:8080
+EXPOSE WEBSITE 80
